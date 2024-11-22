@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerEnvironment>PATH=E:\cpplib_include\SDL2-devel-2.30.9-VC\SDL2-2.30.9\lib\x64;E:\cpplib_include\SDL2_image-devel-2.8.2-VC\SDL2_image-2.8.2\lib\x64;E:\cpplib_include\SDL2_mixer-devel-2.8.0-VC\SDL2_mixer-2.8.0\lib\x64;E:\cpplib_include\SDL2_ttf-devel-2.22.0-VC\SDL2_ttf-2.22.0\lib\x64;%PATH%</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

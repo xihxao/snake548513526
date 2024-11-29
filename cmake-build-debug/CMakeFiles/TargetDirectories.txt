@@ -1,3 +1,0 @@
-C:/Users/xiaofg/CLionProjects/snake548/cmake-build-debug/CMakeFiles/snake548.dir
-C:/Users/xiaofg/CLionProjects/snake548/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/xiaofg/CLionProjects/snake548/cmake-build-debug/CMakeFiles/rebuild_cache.dir

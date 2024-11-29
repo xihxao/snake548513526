@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(snake548)
+project(snake548513526)
 
 #set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 set(CMAKE_CXX_FLAGS "-mconsole")
@@ -39,7 +39,7 @@ link_directories(
 
 
 # 创建可执行文件
-add_executable(snake548 WIN32 ${SOURCES}
+add_executable(snake548513526 WIN32 ${SOURCES}
         include/collisionLayer.h
         src/collisinLayer.cpp
         include/collisionBox.h
@@ -50,7 +50,7 @@ add_executable(snake548 WIN32 ${SOURCES}
 
 
 # 链接所需的库
-target_link_libraries(snake548
+target_link_libraries(snake548513526
         mingw32
         SDL2main
         SDL2

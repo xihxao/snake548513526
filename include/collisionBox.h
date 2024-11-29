@@ -10,7 +10,9 @@ class collisionManager;
 
 class collisionBox {
 private:
-    std::vector<std::pair<int, int>> box;
+    //bool enemy;
+    int traits;
+    std::pair<int, int> box;
     friend collisionManager;
 public:
     collisionBox()=default;

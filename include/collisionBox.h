@@ -2,10 +2,12 @@
 // Created by xiaofg on 24-11-27.
 //
 
-#include <vector>
-#include <utility>
+
 #ifndef COLLISIONBOX_H
 #define COLLISIONBOX_H
+#include <vector>
+#include <utility>
+
 class collisionManager;
 
 class collisionBox {

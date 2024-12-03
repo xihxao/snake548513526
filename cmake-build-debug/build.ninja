@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: snake548
+# Project: snake548513526
 # Configurations: Debug
 # =============================================================================
 
@@ -39,70 +39,77 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/xiaofg/CLionProjects/snake548/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/xiaofg/CLionProjects/snake548513526/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target snake548
+# Object build statements for EXECUTABLE target snake548513526
 
 
 #############################################
-# Order-only phony target for snake548
+# Order-only phony target for snake548513526
 
-build cmake_object_order_depends_target_snake548: phony || .
+build cmake_object_order_depends_target_snake548513526: phony || .
 
-build CMakeFiles/snake548.dir/src/collisinLayer.cpp.obj: CXX_COMPILER__snake548_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548/src/collisinLayer.cpp || cmake_object_order_depends_target_snake548
-  DEP_FILE = CMakeFiles\snake548.dir\src\collisinLayer.cpp.obj.d
-  FLAGS = -mconsole -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
-  OBJECT_DIR = CMakeFiles\snake548.dir
-  OBJECT_FILE_DIR = CMakeFiles\snake548.dir\src
+build CMakeFiles/snake548513526.dir/src/Player.cpp.obj: CXX_COMPILER__snake548513526_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548513526/src/Player.cpp || cmake_object_order_depends_target_snake548513526
+  DEP_FILE = CMakeFiles\snake548513526.dir\src\Player.cpp.obj.d
+  FLAGS = -mconsole -Wall -Wextra -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548513526/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
+  OBJECT_DIR = CMakeFiles\snake548513526.dir
+  OBJECT_FILE_DIR = CMakeFiles\snake548513526.dir\src
 
-build CMakeFiles/snake548.dir/src/collisionBOX.cpp.obj: CXX_COMPILER__snake548_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548/src/collisionBOX.cpp || cmake_object_order_depends_target_snake548
-  DEP_FILE = CMakeFiles\snake548.dir\src\collisionBOX.cpp.obj.d
-  FLAGS = -mconsole -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
-  OBJECT_DIR = CMakeFiles\snake548.dir
-  OBJECT_FILE_DIR = CMakeFiles\snake548.dir\src
+build CMakeFiles/snake548513526.dir/src/collidonBox.cpp.obj: CXX_COMPILER__snake548513526_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548513526/src/collidonBox.cpp || cmake_object_order_depends_target_snake548513526
+  DEP_FILE = CMakeFiles\snake548513526.dir\src\collidonBox.cpp.obj.d
+  FLAGS = -mconsole -Wall -Wextra -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548513526/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
+  OBJECT_DIR = CMakeFiles\snake548513526.dir
+  OBJECT_FILE_DIR = CMakeFiles\snake548513526.dir\src
 
-build CMakeFiles/snake548.dir/src/main.cpp.obj: CXX_COMPILER__snake548_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548/src/main.cpp || cmake_object_order_depends_target_snake548
-  DEP_FILE = CMakeFiles\snake548.dir\src\main.cpp.obj.d
-  FLAGS = -mconsole -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
-  OBJECT_DIR = CMakeFiles\snake548.dir
-  OBJECT_FILE_DIR = CMakeFiles\snake548.dir\src
+build CMakeFiles/snake548513526.dir/src/collisionManager.cpp.obj: CXX_COMPILER__snake548513526_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548513526/src/collisionManager.cpp || cmake_object_order_depends_target_snake548513526
+  DEP_FILE = CMakeFiles\snake548513526.dir\src\collisionManager.cpp.obj.d
+  FLAGS = -mconsole -Wall -Wextra -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548513526/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
+  OBJECT_DIR = CMakeFiles\snake548513526.dir
+  OBJECT_FILE_DIR = CMakeFiles\snake548513526.dir\src
 
-build CMakeFiles/snake548.dir/src/snakegame.cpp.obj: CXX_COMPILER__snake548_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548/src/snakegame.cpp || cmake_object_order_depends_target_snake548
-  DEP_FILE = CMakeFiles\snake548.dir\src\snakegame.cpp.obj.d
-  FLAGS = -mconsole -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
-  OBJECT_DIR = CMakeFiles\snake548.dir
-  OBJECT_FILE_DIR = CMakeFiles\snake548.dir\src
+build CMakeFiles/snake548513526.dir/src/main.cpp.obj: CXX_COMPILER__snake548513526_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548513526/src/main.cpp || cmake_object_order_depends_target_snake548513526
+  DEP_FILE = CMakeFiles\snake548513526.dir\src\main.cpp.obj.d
+  FLAGS = -mconsole -Wall -Wextra -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548513526/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
+  OBJECT_DIR = CMakeFiles\snake548513526.dir
+  OBJECT_FILE_DIR = CMakeFiles\snake548513526.dir\src
+
+build CMakeFiles/snake548513526.dir/src/snakegame.cpp.obj: CXX_COMPILER__snake548513526_unscanned_Debug C$:/Users/xiaofg/CLionProjects/snake548513526/src/snakegame.cpp || cmake_object_order_depends_target_snake548513526
+  DEP_FILE = CMakeFiles\snake548513526.dir\src\snakegame.cpp.obj.d
+  FLAGS = -mconsole -Wall -Wextra -D_SCL_SECURE_NO_WARNINGS -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/xiaofg/CLionProjects/snake548513526/include -IE:/cpplib_include/include -IE:/cpplib_include/spdlog-1.15.0/spdlog-1.15.0/include
+  OBJECT_DIR = CMakeFiles\snake548513526.dir
+  OBJECT_FILE_DIR = CMakeFiles\snake548513526.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target snake548
+# Link build statements for EXECUTABLE target snake548513526
 
 
 #############################################
-# Link the executable snake548.exe
+# Link the executable snake548513526.exe
 
-build snake548.exe: CXX_EXECUTABLE_LINKER__snake548_Debug CMakeFiles/snake548.dir/src/collisinLayer.cpp.obj CMakeFiles/snake548.dir/src/collisionBOX.cpp.obj CMakeFiles/snake548.dir/src/main.cpp.obj CMakeFiles/snake548.dir/src/snakegame.cpp.obj
-  FLAGS = -mconsole -D_SCL_SECURE_NO_WARNINGS -g
+build snake548513526.exe: CXX_EXECUTABLE_LINKER__snake548513526_Debug CMakeFiles/snake548513526.dir/src/Player.cpp.obj CMakeFiles/snake548513526.dir/src/collidonBox.cpp.obj CMakeFiles/snake548513526.dir/src/collisionManager.cpp.obj CMakeFiles/snake548513526.dir/src/main.cpp.obj CMakeFiles/snake548513526.dir/src/snakegame.cpp.obj
+  FLAGS = -mconsole -Wall -Wextra -D_SCL_SECURE_NO_WARNINGS -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = -lmingw32  -lSDL2main  -lSDL2  -lSDL2_image  -lSDL2_mixer  -lSDL2_ttf  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LE:/cpplib_include/SDL2_ttf-2.22.0/x86_64-w64-mingw32/lib   -LE:/cpplib_include/SDL2-devel-2.30.9-mingw/SDL2-2.30.9/x86_64-w64-mingw32/lib   -LE:/cpplib_include/SDL2-devel-2.30.9-mingw/SDL2-2.30.9/x86_64-w64-mingw32/lib/libSDL2.a   -LE:/cpplib_include/SDL2-devel-2.30.9-mingw/SDL2-2.30.9/x86_64-w64-mingw32/lib/libSDL2main.a   -LE:/cpplib_include/SDL2_image-devel-2.8.2-mingw/SDL2_image-2.8.2/x86_64-w64-mingw32/lib   -LE:/cpplib_include/SDL2_mixer-devel-2.8.0-mingw/SDL2_mixer-2.8.0/x86_64-w64-mingw32/lib
-  OBJECT_DIR = CMakeFiles\snake548.dir
+  OBJECT_DIR = CMakeFiles\snake548513526.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = snake548.exe
-  TARGET_IMPLIB = libsnake548.dll.a
-  TARGET_PDB = snake548.exe.dbg
+  TARGET_FILE = snake548513526.exe
+  TARGET_IMPLIB = libsnake548513526.dll.a
+  TARGET_PDB = snake548513526.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\xiaofg\CLionProjects\snake548\cmake-build-debug && "D:\clion\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\xiaofg\CLionProjects\snake548513526\cmake-build-debug && "D:\clion\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -113,7 +120,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\xiaofg\CLionProjects\snake548\cmake-build-debug && "D:\clion\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\xiaofg\CLionProjects\snake548 -BC:\Users\xiaofg\CLionProjects\snake548\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\xiaofg\CLionProjects\snake548513526\cmake-build-debug && "D:\clion\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\xiaofg\CLionProjects\snake548513526 -BC:\Users\xiaofg\CLionProjects\snake548513526\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -123,7 +130,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build snake548: phony snake548.exe
+build snake548513526: phony snake548513526.exe
 
 # =============================================================================
 # Folder targets.
@@ -131,9 +138,9 @@ build snake548: phony snake548.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/xiaofg/CLionProjects/snake548/cmake-build-debug
+# Folder: C:/Users/xiaofg/CLionProjects/snake548513526/cmake-build-debug
 
-build all: phony snake548.exe
+build all: phony snake548513526.exe
 
 # =============================================================================
 # Built-in targets
@@ -142,14 +149,14 @@ build all: phony snake548.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/xiaofg/CLionProjects/snake548/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/xiaofg/CLionProjects/snake548513526/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/xiaofg/CLionProjects/snake548/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake: phony
+build C$:/Users/xiaofg/CLionProjects/snake548513526/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/clion/CLion$ 2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################

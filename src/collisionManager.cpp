@@ -5,15 +5,29 @@
 #include "collisionManager.h"
 #include <vector>////////////////////////
 
+
+collisionManager::collisionManager():Has_Used({}),boxes({}){}
+collisionManager::~collisionManager() {
+    for(auto & i : boxes) {
+        i.second.clear();
+        i.second.shrink_to_fit();
+    }
+    Has_Used.clear();
+    Has_Used.rehash(1);
+}
+
+
+
 bool collisionManager::HadCreated = false;
 collisionManager* collisionManager::coll_manager=nullptr;
 
-collisionManager* collisionManager::collisionManager_Init(){
-    if (!HadCreated){
-        HadCreated = true;
-        coll_manager=new collisionManager();
+
+collisionManager* collisionManager_Init(){
+    if (!collisionManager::HadCreated){
+        collisionManager::HadCreated = true;
+        collisionManager::coll_manager=new collisionManager();
     }
-    return coll_manager;
+    return collisionManager::coll_manager;
 }
 
 bool collisionManager::collisionDetection(int trait1,int trait2){
@@ -47,7 +61,7 @@ bool collisionManager::collisionDetection(int trait1,int trait2){
     }
 }*/
 int collisionManager::creat_collisionbox(int x,int y,int trait,int offset=0){
-    if (Has_Used.find(std::pair<int,int>(x,y))!=Has_Used.end()){
+    if (Has_Used.contains(std::pair<int,int>(x,y))){
         playerkill;
         playertrytokill;
     }
@@ -57,10 +71,15 @@ int collisionManager::creat_collisionbox(int x,int y,int trait,int offset=0){
             a->second.insert((a->second.begin()+offset),std::pair<int,int>(x,y));
         }
         else {
-            std::vector<std::pair<int,int>>* temp=new std::vector<std::pair<int,int>>;
-            temp->push_back(std::pair<int,int>(x,y));
+            auto* temp=new std::vector<std::pair<int,int>>;
+            temp->emplace_back(x,y);
             boxes.insert({trait,*temp});
         }
-        Has_Used.emplace(std::pair<int,int>(x,y));
+        Has_Used.emplace(x,y);
     }
+    return 0;
+}
+
+int collisionManager::boxesSize()const {
+    return boxes.size();
 }

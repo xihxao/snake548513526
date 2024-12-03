@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.30)
 project(snake548513526)
 
 #set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
-set(CMAKE_CXX_FLAGS "-mconsole")
+set(CMAKE_CXX_FLAGS "-mconsole -Wall -Wextra")
 set(CMAKE_C_FLAGS "-mconsole")
 # 强制编译为控制台应用程序，而非 GUI 应用程序
 # 如果是 Windows 平台，可以设置一些特定的编译标志
@@ -40,13 +40,8 @@ link_directories(
 
 # 创建可执行文件
 add_executable(snake548513526 WIN32 ${SOURCES}
-        include/collisionLayer.h
-        src/collisinLayer.cpp
-        include/collisionBox.h
-        include/collisionManager.h
-        src/collisionBOX.cpp
-        src/collisionBOX.h
-        src/collisionManager.cpp)
+        include/Player.h
+        src/Player.cpp)
 
 
 # 链接所需的库

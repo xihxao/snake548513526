@@ -18,7 +18,6 @@ other_description:
 #include <iostream>
 #include <string>
 #include <vector>
-#include <thread>
 #include <stdexcept>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_timer.h>
@@ -33,6 +32,8 @@ other_description:
 #else
     throw "unexcept_OS"
 #endif
+
+#include <collisionManager.h>
 
 #include "snakegame.h"
 //extern std::array<int,1024>chessboard{0};
@@ -78,12 +79,13 @@ int main(int argc,char* argv[])
     }
     spdlog::info("SDL Init Successfully");
 
+    const collisionManager* COLL_MANAGER=collisionManager_Init();
 
     // 创建窗口
     win = SDL_CreateWindow("SNAKE_GAME",
                                        SDL_WINDOWPOS_CENTERED,
                                        SDL_WINDOWPOS_CENTERED,
-                                       600, 600, 0);
+                                       930, 930, 0);
     if (!win) {
         printf("Error creating window: %s\n", SDL_GetError());
         SDL_Quit();
@@ -131,13 +133,13 @@ int main(int argc,char* argv[])
         if (input_char==' ')
           global_game.pasue();
         player1.move_change(input_char);
-        winner=global_game.Phy_Frame_Reflash(player1,player2);
+        winner=&global_game.Phy_Frame_Reflash(player1,player2);
         if (winner!=nullptr) {
             cout/*<<winner->traits*/<<" win"<<endl;
             break;
         }
         global_game.food_creat();
-        global_game.Graph_Reflash();
+        global_game.Graph_Reflash(rend);
         //this_thread::sleep_for(chrono::seconds(2));
     }
 

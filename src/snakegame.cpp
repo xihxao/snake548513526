@@ -1,61 +1,22 @@
 #include <random>
 #include <spdlog/spdlog.h>
 #include "snakegame.h"
-Player::Player(int a):traits(a),location({}) {}
-Player::Player():traits(0){};
-Player::~Player(){}
-int Player::kill(Global_Game& a){
-    for(int i=0;i<930;i++){
-        if(a.chessboard[i]>0&&a.chessboard[i]%traits==0){
-            a.chessboard[i]=0;
-        }
+#include "player.h"
+#include "collisionManager.h"
+
+extern collisionManager* COLL_MANAGER;
+
+void Global_Game::init(char PATH[]){
+    if (PATH==NULL) {
+        return;
     }
-    return 0;
-};
-
-void Player::move_change(char a){
-    switch (a)
-    {
-    case 'w':
-        std::cout<<'w'<<std::endl;
-        break;
-    case 'a':
-        std::cout<<'a'<<std::endl;
-        break;    
-    case 's':
-        std::cout<<'s'<<std::endl;
-        break;
-    case 'd':
-        std::cout<<'d'<<std::endl;
-        break;
-    default:
-        break;
-    }
-}
-
-void Player::move_ahead() {
-    std::cout<<"move ahead"<<std::endl;
-}
-
-std::pair<int, int> Player::getLocation(int a) {
-    return std::pair<int,int>{1,1};
-}
-
-
-
-void Global_Game::init(char a[]){
-    for (int i = 0; i < 930; i++)
-    {
-        if (i%30==0)
-        {
-            chessboard[i]=-65535;
-            std::cout<<std::endl;
-        }
-        std::cout<<chessboard[i];
+    else {
+        load PATH;
     }
 }
 void Global_Game::pasue(){
-    std::this_thread::sleep_for(std::chrono::milliseconds(15));
+    //std::this_thread::sleep_for(std::chrono::milliseconds(15));
+    SDL_Delay(20);
     std::cin.ignore();
     std::cin.clear();
     char a{'a'};
@@ -64,35 +25,51 @@ void Global_Game::pasue(){
     }
 }
 
-auto Global_Game::Itera(int a, int b)->decltype(chessboard.begin()) {
-    return chessboard.begin() + (a * 32 + b);
-}
-
-void Global_Game::SoundPlay(const std::string& a)const{
-    //this->SoundPlay_flag=1;
-    //code
-    //SoundPlay_flag=0;
-    std::cout<<"SoundPlay"<<std::endl;
-}
+//auto Global_Game::Itera(int a, int b)->decltype(chessboard.begin()) {
+//    return chessboard.begin() + (a * 32 + b);
+//}
 
 void Global_Game::food_creat(){
-    int a=rand()%30;
-    int b=rand()%30;
-    //auto temp = Itera(a + 1, b + 1);
-    *(Itera(a + 1, b + 1)) = -666;
+    int a,b;
+    do {
+        a=rand()%30;
+        b=rand()%30;
+        //auto temp = Itera(a + 1, b + 1);
+    }while (COLL_MANAGER->collisionHasUsed(a,b));
+        COLL_MANAGER->creat_collisionbox(a,b,666,0);
+
     spdlog::info("food creat");
 }
 
-void Global_Game::Graph_Reflash(){
+void Global_Game::Graph_Reflash(SDL_Renderer* rend){
+    SDL_Rect rect={0,0,930,930};
+    SDL_SetRenderDrawColor(rend,255,255,255,255);
+    SDL_RenderFillRect(rend,&rect);
+    rect.w=30;rect.h=30;
+    for (int i=0; i<4;i++) {
+        COLL_MANAGER->boxes.find(i);
+        SDL_SetRenderDrawColor(rend,255-32*i+32,32*i-32,32*i-32,255);
+        for (int j=0; j<4;j++) {
+            rect.w=30;rect.h=30;
+            SDL_RenderFillRect(rend,&rect);
+        }
+    }
 
-    std::cout<<"Graph_Reflash"<<std::endl;
+
+    spdlog::info("Graph Reflash");
 };
 
-template <class... Args>
+/*template <class... Args>
 Player* Global_Game::Phy_Frame_Reflash(Args... args){
     (..., args.move_ahead());
     (..., args.getLocation(0));
     spdlog::info("Physicis Reflash");
     return nullptr;
+}*/
+Player Global_Game::Phy_Frame_Reflash() {
+    COLL_MANAGER->collisionDetection();
+    spdlog::info("Phy_Frame_Reflash");
+    return if_win();
 }
-template Player* Global_Game::Phy_Frame_Reflash<Player>(Player, Player);
+
+//template Player* Global_Game::Phy_Frame_Reflash<Player>(Player, Player);
